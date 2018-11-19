@@ -8,17 +8,17 @@ namespace Picqer\Financials\Exact;
  * @package Picqer\Financials\Exact
  * @see https://start.exactonline.nl/docs/HlpRestAPIResourcesDetails.aspx?name=PurchaseEntryPurchaseEntries
  *
- * @property Guid $EntryID Primary key
+ * @property string $EntryID Primary key
  * @property Double $AmountDC Amount in the default currency of the company
  * @property Double $AmountFC Amount in the currency of the transaction
  * @property Int32 $BatchNumber Batch number
  * @property DateTime $Created Creation date
- * @property Guid $Creator User ID of creator
+ * @property string $Creator User ID of creator
  * @property String $CreatorFullName Name of creator
  * @property String $Currency Currency code
  * @property String $Description Description
  * @property Int32 $Division Division code
- * @property Guid $Document Reference to document
+ * @property string $Document Reference to document
  * @property Int32 $DocumentNumber Document number
  * @property String $DocumentSubject Document subject
  * @property DateTime $DueDate Date when payment should be done
@@ -31,21 +31,21 @@ namespace Picqer\Financials\Exact;
  * @property String $Journal Journal
  * @property String $JournalDescription Description of Journal
  * @property DateTime $Modified Last modified date
- * @property Guid $Modifier User ID of modifier
+ * @property string $Modifier User ID of modifier
  * @property String $ModifierFullName Name of modifier
  * @property Int32 $OrderNumber Order number
  * @property String $PaymentCondition Payment condition
  * @property String $PaymentConditionDescription Description of PaymentCondition
  * @property String $PaymentReference The payment reference used for bank imports, VAT return and Tax reference
  * @property Int32 $ProcessNumber
- * @property PurchaseEntryLines $PurchaseEntryLines Collection of lines
+ * @property array $PurchaseEntryLines Collection of lines
  * @property Double $Rate Currency exchange rate
  * @property Int16 $ReportingPeriod Reporting period
  * @property Int16 $ReportingYear Reporting year
  * @property Boolean $Reversal Indicates that amounts are reversed
  * @property Int16 $Status Status: 5 = Rejected, 20 = Open, 50 = Processed
  * @property String $StatusDescription Description of Status
- * @property Guid $Supplier Reference to supplier (account)
+ * @property string $Supplier Reference to supplier (account)
  * @property String $SupplierName Name of supplier
  * @property Int32 $Type Type: 30 = Purchase entry, 31 = Purchase credit note
  * @property String $TypeDescription Description of Type
